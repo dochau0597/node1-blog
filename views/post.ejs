@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <%- include('layouts/header') -%>
+
+  <body>
+    <!-- Navigation -->
+    <%- include('layouts/navbar') -%>
+
+    <!-- Page Content -->
+    <div class="container">
+      <div class="row">
+        <div class="col-md">
+          <div class="card card-outline-secondary my-2">
+            <img
+              class="card-img-top img-fluid"
+              src="http://placehold.it/900x400"
+              alt=""
+            />
+          </div>
+
+          <div class="card card-outline-secondary my-4">
+            <div class="card-header">
+              <h3 class="card-title"><%= detailPost.tieude %></h3>
+              <p><%= detailPost.mota %></p>
+              <small class="text-muted">Posted by Anonymous on 3/1/17</small>
+            </div>
+            <div class="card-body">
+              <p class="card-text">
+                <%= detailPost.noidung %>
+              </p>
+            </div>
+          </div>
+          <!-- /.card -->
+        </div>
+        <!-- /.col-lg-9 -->
+      </div>
+    </div>
+    <!-- /.container -->
+
+    <!-- Footer -->
+    <%- include('layouts/footer') -%>
+
+    <!-- Bootstrap core JavaScript -->
+    <%- include('layouts/scripts') -%>
+  </body>
+</html>
